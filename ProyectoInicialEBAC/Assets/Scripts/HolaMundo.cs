@@ -10,7 +10,7 @@ public class HolaMundo : MonoBehaviour
     void Start()
     {
         x = 0;
-        print("algo paso");
+        print("Algo paso");
         Debug.Log("Algo paso");
         Debug.LogWarning("Algo salio medianamente mal");
         Debug.LogError("Algo salio muy mal"); 
