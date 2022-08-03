@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CrearCuboDeCero : MonoBehaviour
+public class ScAwake : MonoBehaviour
 {
-
-    GameObject objToSpawn;
+    GameObject cuboAwake;
     Vector3[] vertices = {
         new Vector3 (0 ,0 ,0), //vertice0
         new Vector3 (1 ,0 ,0), //vertice1
@@ -34,28 +33,24 @@ public class CrearCuboDeCero : MonoBehaviour
         0, 1, 6,
     };
 
-
-    
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        objToSpawn = new GameObject("Nuestro Primer Cubo");
-        objToSpawn.AddComponent<MeshFilter>();
-        var meshFilter = objToSpawn.GetComponent<MeshFilter>().mesh;
+        cuboAwake = new GameObject("Nuestro Primer Cubo");
+        cuboAwake.AddComponent<MeshFilter>();
+        var meshFilter = cuboAwake.GetComponent<MeshFilter>().mesh;
         meshFilter.Clear();
         meshFilter.vertices = vertices;
         meshFilter.triangles = triangulos;
         meshFilter.Optimize();
         meshFilter.RecalculateNormals();
-        objToSpawn.AddComponent<BoxCollider>();
-        var boxCollider = objToSpawn.GetComponent<BoxCollider>();
+        cuboAwake.AddComponent<BoxCollider>();
+        var boxCollider = cuboAwake.GetComponent<BoxCollider>();
         boxCollider.center = new Vector3(0.5f, 0.5f, 0.5f);
-        objToSpawn.AddComponent<MeshRenderer>();
-        var meshRendermaterial = objToSpawn.GetComponent<MeshRenderer>().material;
-        meshRendermaterial.color = Color.white;
-        objToSpawn.transform.position = Vector3.one;
-
-
+        cuboAwake.AddComponent<MeshRenderer>();
+        var meshRendermaterial = cuboAwake.GetComponent<MeshRenderer>().material;
+        meshRendermaterial.color = Color.green;
+        cuboAwake.transform.position = Vector3.one;
     }
 
     // Update is called once per frame
