@@ -233,6 +233,7 @@ GameObject:
   - component: {fileID: 963194232}
   - component: {fileID: 963194233}
   - component: {fileID: 963194234}
+  - component: {fileID: 963194235}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -382,7 +383,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cbbe6d7963f6a7a45a6758aba0604bb9, type: 3}
   m_Name: 
@@ -390,6 +391,18 @@ MonoBehaviour:
   Prefabcubo: {fileID: 1086472236}
   listaDeCubos: []
   numCubos: 0
+--- !u!114 &963194235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f3136d4305185346ab6e1b9816d4ad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1086472236 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2422318298038411130, guid: 837d94a3e12c3084dabcb71a42d7a256, type: 3}
@@ -596,6 +609,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2422318298038411109, guid: 837d94a3e12c3084dabcb71a42d7a256, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2422318298038411128, guid: 837d94a3e12c3084dabcb71a42d7a256, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2422318298038411129, guid: 837d94a3e12c3084dabcb71a42d7a256, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2422318298038411130, guid: 837d94a3e12c3084dabcb71a42d7a256, type: 3}
